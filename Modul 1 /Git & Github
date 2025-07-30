@@ -1,1 +1,46 @@
+# 📘 Modul 1: Git & GitHub - Hari 1
+🔓 Pembuka Semangat
+🧠 "Belajar DevOps seperti membangun infrastruktur: mulai dari pondasi yang kuat, sabar menyusun tiap lapisan, sampai akhirnya sistem bekerja otomatis untukmu."
+— Coach GPT, 2025
 
+# 🎯 Tujuan Hari Ini:
+Memahami apa itu Git dan GitHub
+
+Mengerti konsep version control melalui analogi sehari-hari
+
+Mengetahui kenapa DevOps tidak bisa lepas dari Git
+
+Install Git (jika belum)
+
+# 📖 1. Definisi Dasar
+🧩 Apa itu Git?
+Git adalah sistem version control — sistem yang mencatat perubahan terhadap file dari waktu ke waktu, sehingga kamu bisa melihat kembali versi sebelumnya, membandingkan, dan mengembalikan.
+
+Git menyimpan snapshot setiap perubahan, bukan hanya file terakhir.
+
+☁️ Apa itu GitHub?
+GitHub adalah platform hosting berbasis Git di cloud, digunakan untuk:
+
+Menyimpan project
+
+Kolaborasi tim
+
+Code review (Pull Request)
+
+CI/CD (GitHub Actions)
+
+# 🧠 2. Analogi Kehidupan Sehari-hari
+Bayangkan kamu sedang nulis skripsi.
+
+Tanpa Git: kamu simpan file skripsi-final-FIX-v5-terbaru-FIX-BGT.docx
+
+Dengan Git: kamu commit setiap perubahan → bisa kembali ke versi apapun kapan saja, dan tahu siapa mengubah apa.
+
+Git seperti mesin waktu + CCTV + backup otomatis untuk kode kamu.
+
+# ⚖️ 3. Pro & Kontra Git
+Pro	Kontra
+Bisa rollback kapan saja	Agak ribet di awal
+Kolaborasi lebih aman	Konflik merge bisa bikin pusing
+Riwayat perubahan lengkap	Perlu paham konsep dasar dulu
+Ideal untuk semua skala project	Tidak cocok untuk file besar (video, binary)
