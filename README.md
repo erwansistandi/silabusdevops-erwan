@@ -4,16 +4,16 @@ Disusun oleh: ChatGPT sebagai coach | Untuk: Erwan Sistandi
 Durasi: ±6 Bulan (2 jam per hari)
 Tujuan Akhir: Karier freelance remote di Upwork + bangun portofolio nyata + dokumentasi konten YouTube
 
-🌟 Visi
+# 🌟 Visi
 Membentuk seorang DevOps Engineer yang mandiri, adaptif, dan profesional, dengan kemampuan mengelola sistem dan pipeline DevOps secara menyeluruh, mulai dari pengembangan hingga deployment, monitoring, dan automasi, serta mampu bersaing di pasar kerja global.
 
-🎯 Misi
+# 🎯 Misi
 1. Menguasai seluruh fondasi DevOps, terutama untuk lingkungan on-premise.
 2. Membangun portofolio nyata dari project DevOps modular.
 3. Mendokumentasikan proses belajar untuk membangun personal branding (GitHub, YouTube).
 4. Mencapai tingkat kepercayaan diri teknikal agar siap menerima proyek freelance DevOps dari klien luar negeri (Upwork/Fiverr/dll).
 
-📘 Silabus DevOps Engineer (Struktur Materi)
+# 📘 Silabus DevOps Engineer (Struktur Materi)
 
 🔰 Fundamental
 1. Git & GitHub – version control modern
