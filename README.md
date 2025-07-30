@@ -45,3 +45,19 @@ Membentuk seorang DevOps Engineer yang mandiri, adaptif, dan profesional, dengan
 🧰 Automasi & Scripting
 1. Bash Scripting – tool utama automasi on-premise
 2. Python untuk DevOps – automasi API, parsing, logging, alerting
+
+## Setiap topik akan disajikan dengan: ##
+
+✅ Definisi & Fungsi
+
+🧠 Analogi Kehidupan Sehari-hari
+
+⚖️ Pro & Kontra
+
+🧪 Latihan Praktis
+
+📦 Project Portofolio
+
+🎥 Ide Konten YouTube
+
+
