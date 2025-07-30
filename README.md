@@ -60,4 +60,15 @@ Membentuk seorang DevOps Engineer yang mandiri, adaptif, dan profesional, dengan
 
 🎥 Ide Konten YouTube
 
+# 💬 Quote Motivasi Belajar DevOps
+"DevOps isn’t just about tools — it’s about mindset, discipline, and continuous growth."
+
+"Belajar DevOps seperti membangun infrastruktur: mulai dari pondasi yang kuat, sabar menyusun tiap lapisan, sampai akhirnya sistem bekerja otomatis untukmu."
+
+"Setiap baris script yang kamu tulis hari ini, adalah waktu yang kamu hemat 10x lipat di masa depan."
+
+"Bekerja keras dalam diam, biarkan Git log dan Grafana dashboard yang berbicara."
+
+"Engineer hebat bukan yang tahu segalanya, tapi yang tahu cara belajar dan menyelesaikan masalah dengan sumber daya yang ada."
+
 
