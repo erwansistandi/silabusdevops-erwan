@@ -39,8 +39,51 @@ Dengan Git: kamu commit setiap perubahan → bisa kembali ke versi apapun kapan 
 Git seperti mesin waktu + CCTV + backup otomatis untuk kode kamu.
 
 # ⚖️ 3. Pro & Kontra Git
-Pro	Kontra
-Bisa rollback kapan saja	Agak ribet di awal
-Kolaborasi lebih aman	Konflik merge bisa bikin pusing
-Riwayat perubahan lengkap	Perlu paham konsep dasar dulu
-Ideal untuk semua skala project	Tidak cocok untuk file besar (video, binary)
+* Pro	
+Bisa rollback kapan saja	
+Kolaborasi lebih aman	
+Riwayat perubahan lengkap	
+Ideal untuk semua skala project	
+* Kontra
+Agak ribet di awal
+Konflik merge bisa bikin pusing
+Perlu paham konsep dasar dulu
+Tidak cocok untuk file besar (video, binary)
+
+# 🧪 4. Tugas Praktik Hari Ini
+🖥️ Langkah 1: Install Git
+Windows: https://git-scm.com/download/win
+Linux: sudo apt install git atau sudo yum install git
+
+🔧 Langkah 2: Konfigurasi Git
+git config --global user.name "Erwan Sistandi"
+git config --global user.email "emailkamu@example.com"
+
+📝 Langkah 3: Buat Project Folder
+-----------------------------------------------------------------
+mkdir belajar-git
+cd belajar-git
+git init
+-----------------------------------------------------------------
+( Buat file catatan.txt, tulis isinya: Hari pertama belajar Git.)
+-----------------------------------------------------------------
+git add catatan.txt
+git commit -m "Commit pertama: catatan awal belajar Git"
+-----------------------------------------------------------------
+
+📌 Tugas Evaluasi Hari Ini
+Kirimkan:
+   1. Screenshot hasil git log
+   2. Isi file catatan.txt
+Buat repository private atau public di GitHub bernama belajar-git
+Push commit pertama ke GitHub
+Kirimkan link repositorinya ke saya untuk evaluasi
+
+🎥 Ide Konten YouTube Hari Ini:
+Judul: "Belajar Git untuk Pemula | Hari Pertama Jadi DevOps Engineer"
+
+📋 Script kontennya:
+Pembukaan dengan quote pembuka tadi
+Cerita singkat kenapa kamu mulai belajar DevOps
+Tunjukkan proses install, init repo, commit pertama
+Akhiri dengan ajakan untuk ikuti seri belajar kamu
