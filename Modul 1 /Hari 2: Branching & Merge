@@ -1,0 +1,74 @@
+🔓 Pembuka Semangat Hari 2
+💡 “Branch adalah tempat kamu bebas bereksperimen. Git memberi kamu ruang salah tanpa takut rusak.”
+— Coach GPT
+
+🎯 Tujuan Hari Ini:
+Paham konsep branching (cabang pengembangan)
+Melakukan eksperimen tanpa merusak main
+Belajar merge dan menghindari konflik sederhana
+
+📖 1. Definisi
+🌿 Apa itu Branch?
+Sederhananya: salinan sementara dari project utama, tempat kamu bisa:
+Coba fitur baru
+Edit tanpa ganggu yang lain
+Tes perubahan tanpa resiko
+📌 Apa itu Merge?
+Setelah selesai bereksperimen, kamu bisa gabungkan hasil branch ke main agar perubahan permanen.
+
+🧠 Analogi Sehari-hari
+Bayangkan kamu kerja di restoran:
+Main = menu tetap yang sudah siap disajikan
+Branch = dapur eksperimen untuk resep baru
+Kalau cocok → Merge ke menu utama
+Kalau gagal → tinggal buang branch, tidak merusak menu asli
+
+| Pro                      | Kontra                                |
+| ------------------------ | ------------------------------------- |
+| Bisa coba hal baru bebas | Bisa konflik jika asal merge          |
+| Cocok untuk kerja tim    | Branch menumpuk jika tidak dikelola   |
+| Bisa rollback lebih aman | Perlu kedisiplinan dalam penggabungan |
+
+🧪 2. Tugas Praktik
+🔧 Langkah 1: Buat Branch Baru
+-------------------------------------------------------------------
+git checkout -b fitur-tambahan
+-------------------------------------------------------------------
+📝 Langkah 2: Edit File
+Ubah catatan.txt, tambahkan:
+-------------------------------------------------------------------
+Hari kedua belajar Git. 
+Belajar branching dan merge.
+-------------------------------------------------------------------
+Commit:
+-------------------------------------------------------------------
+git add catatan.txt
+git commit -m "Menambahkan catatan Hari 2"
+-------------------------------------------------------------------
+🔁 Langkah 3: Kembali ke Main & Merge
+-------------------------------------------------------------------
+git checkout main
+git merge fitur-tambahan
+-------------------------------------------------------------------
+⬆️ Langkah 4: Push ke GitHub
+-------------------------------------------------------------------
+git push origin main
+-------------------------------------------------------------------
+Kalau kamu ingin cek kamu sedang di branch mana:
+-------------------------------------------------------------------
+git branch
+-------------------------------------------------------------------
+Branch yang aktif akan ditandai dengan *
+
+📌 Tugas Evaluasi Hari 2
+Kirim screenshot:
+git log --oneline --graph
+Isi file catatan.txt setelah merge
+Kirim link repositori GitHub (yang sudah update dengan hasil merge)
+
+🎥 Ide Konten YouTube Hari 2:
+Judul: "Git Branch dan Merge Dijelaskan Mudah | Hari 2 Belajar DevOps"
+📋 Konten:
+Penjelasan ringan apa itu branch
+Simulasi edit & merge
+Tips menghindari konflik
