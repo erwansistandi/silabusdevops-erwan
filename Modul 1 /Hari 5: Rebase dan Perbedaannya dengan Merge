@@ -1,0 +1,57 @@
+🎯 Tujuan:
+Memahami perbedaan antara merge dan rebase
+Melakukan git rebase dari satu branch ke branch lain
+Menyelesaikan konflik saat rebase
+
+1. 🧠 Konsep Dasar: Merge vs Rebase
+
+| Aspek           | Merge                            | Rebase                                        |
+| --------------- | -------------------------------- | --------------------------------------------- |
+| Sejarah Commit  | Tetap bercabang (divergen)       | Linear, jadi seperti satu garis lurus         |
+| Commit Tambahan | Akan muncul commit merge         | Tidak menambah commit merge                   |
+| Kapan dipakai   | Kolaborasi tim (sejarah lengkap) | Membuat riwayat commit lebih bersih & teratur |
+
+📌 Analogi:
+Merge seperti menyatukan dua jalan dengan membuat persimpangan.
+Rebase seperti menggeser jalan kita agar menyatu lurus ke jalan utama.
+
+2. 🧪 Langkah Praktik
+🔧 Siapkan dua folder kerja:
+Pastikan kamu masih punya:
+belajar-git/ (asli)
+belajar-git-clone/ (hasil clone)
+
+A. Buat Branch Baru di Folder Asli
+git checkout -b fitur-rebase
+echo "Rebase dari folder asli" > hari5.txt
+git add hari5.txt
+git commit -m "Menambahkan hari5.txt dari folder asli"
+
+B. Simulasikan Perubahan di Folder Clone
+# Di folder belajar-git-clone
+cd ../belajar-git-clone/belajar-git
+echo "Perubahan di main dari folder clone" >> catatan.txt
+git add catatan.txt
+git commit -m "Perubahan catatan.txt dari folder clone"
+git push origin main
+
+C. Rebase di Folder Asli
+# Di folder belajar-git
+git checkout fitur-rebase
+git fetch origin
+git rebase origin/main
+
+Jika terjadi konflik:
+Perbaiki file
+Tambahkan file (git add)
+Lanjutkan rebase: git rebase --continue
+
+Setelah selesai:
+git push origin fitur-rebase
+
+3. 🎓 Tugas Hari 5
+ Buat branch fitur-rebase dan file hari5.txt
+ Lakukan perubahan di folder clone
+ Jalankan git rebase
+ Push branch fitur-rebase ke GitHub
+ Kirim link repo yang sudah berisi perubahan tersebut
