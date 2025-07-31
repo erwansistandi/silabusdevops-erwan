@@ -1,0 +1,71 @@
+🎯 Topik: GitHub Flow & Pull Request (PR)
+🔓 Pembuka Semangat Hari 3
+💬 “Pull Request bukan cuma soal kode, tapi komunikasi, kerja tim, dan kepercayaan.”
+— Coach GPT
+
+🧠 Apa Itu GitHub Flow?
+GitHub Flow adalah cara kolaborasi modern dan ringan yang digunakan oleh hampir semua tim developer dan DevOps di dunia — terutama di proyek open-source dan startup.
+💡 Alurnya:
+1. Buat branch untuk fitur/bug
+2. Push branch ke GitHub
+3. Buat Pull Request (PR)
+4. Review & diskusi
+5. Merge ke main
+
+📖 Analogi Kehidupan Sehari-hari
+Bayangkan kamu kerja kelompok skripsi.
+ Satu orang nulis bab 1, satu orang nulis bab 2.
+ Tiap orang kerja di dokumen terpisah.
+ Saat selesai, kamu gabungin semua ke dokumen utama setelah dicek (review).
+Pull Request = kamu bilang:
+“Saya udah selesai ngerjain bagian ini, tolong dicek, kalau oke, gabungin ke dokumen utama.”
+
+⚖️ Pro & Kontra
+| Pro                              | Kontra                                    |
+| -------------------------------- | ----------------------------------------- |
+| Memudahkan kolaborasi jarak jauh | Proses lebih panjang dari commit langsung |
+| Ada ruang diskusi & review       | Harus disiplin pakai                      |
+| Aman: tidak langsung ke `main`   | Butuh pemahaman alur GitHub               |
+
+🧪 Tugas Praktik Hari 3
+🔧 Langkah 1: Buat Branch Baru
+-------------------------------------------------------------------------------
+git checkout -b hari3-pr
+-------------------------------------------------------------------------------
+📝 Langkah 2: Tambahkan File Baru
+Contoh:
+-------------------------------------------------------------------------------
+echo "Hari ketiga belajar GitHub Flow dan PR" > hari3.txt
+git add hari3.txt
+git commit -m "Menambahkan file hari3.txt"
+-------------------------------------------------------------------------------
+🔄 Langkah 3: Push ke GitHub
+-------------------------------------------------------------------------------
+git push origin hari3-pr
+-------------------------------------------------------------------------------
+
+🌐 Langkah 4: Buat Pull Request (PR)
+1. Buka GitHub: https://github.com/username/belajar-git
+2. Akan muncul notifikasi: “Compare & pull request”
+3. Klik, lalu isi deskripsi:
+   PR ini menambahkan file hari3.txt sebagai latihan GitHub Flow.
+4. Klik "Create Pull Request"
+
+✅ Bonus: Merge PR-mu
+Kalau kamu kerjakan solo, kamu juga bisa langsung klik tombol "Merge pull request" → lalu "Confirm merge".
+
+📌 Tugas Evaluasi Hari 3
+1. Kirim link Pull Request kamu (boleh sudah di-merge)
+2. Kirim isi dari file hari3.txt hasil merge ke main
+3. Kirim screenshot dari tampilan GitHub Flow (opsional)
+
+🎥 Ide Konten YouTube Hari 3:
+Judul: “Belajar GitHub Pull Request dan Flow Profesional | Hari 3 DevOps”
+📋 Konten:
+   Penjelasan apa itu PR + analogi kerja kelompok
+   Simulasi PR dari branch hari3-pr
+   Tips penamaan branch dan deskripsi PR yang baik
+
+
+
+
