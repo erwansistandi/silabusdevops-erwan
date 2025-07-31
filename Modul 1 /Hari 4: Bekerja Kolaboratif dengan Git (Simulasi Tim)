@@ -1,0 +1,47 @@
+🗓️ Hari 4 – Bekerja Kolaboratif dengan Git (Simulasi Tim)
+
+🎯 Tujuan Hari Ini:
+1. Memahami cara kerja tim dengan Git: clone, branching, pull, dan merge.
+2. Mempelajari cara mengatasi konflik saat merge.
+3. Melakukan kolaborasi seperti di dunia kerja DevOps sungguhan.
+
+📌 Materi Utama:
+1. Clone Repository
+   Perintah: git clone <url>
+   Analogi: Menyalin dokumen kerja tim dari Google Drive ke laptop kamu.
+2. Buat dan Checkout ke Branch Fitur
+   Perintah: git checkout -b fitur-xyz
+   Analogi: Bekerja di halaman berbeda dalam buku yang sama agar tidak ganggu rekan tim.
+3. Simulasi Konflik Merge
+   Tambahkan baris pada file yang sama dari dua branch berbeda.
+   Merge dan amati konflik yang terjadi.
+   Perintah: git merge, git status, edit manual file lalu git add dan git commit.
+4. Push ke Remote & Pull Request
+   Buat PR dan tulis catatan PR seperti profesional.
+   Simulasikan review dan merge dari PR orang lain.
+
+✅ Checklist Tugas Hari 4:
+   Clone ulang repo kamu ke folder baru (simulasi rekan tim).
+   Buat branch baru: fitur-konflik
+   Edit file catatan.txt, tambahkan baris Hari ke-4 belajar Git
+   Commit dan push ke remote
+   Di folder clone lain (rekan tim), edit baris yang sama dan push juga
+   Merge dan tangani konflik
+   Buat Pull Request dengan deskripsi jelas
+   Tambahkan checklist PR berikut 👇
+
+📋 Template Pull Request:
+## 📝 Deskripsi
+Menambahkan fitur hari ke-4 untuk belajar simulasi konflik Git.
+
+## ✅ Checklist PR
+- [ ] Sudah pull dari branch `main` terbaru
+- [ ] Tidak ada konflik saat merge
+- [ ] Sudah diuji secara lokal
+- [ ] Siap untuk direview
+
+💡 Tips Pro
+Jangan panik saat konflik. Ini hal yang sangat umum dan justru menunjukkan kamu mahir Git.
+PR yang baik harus bisa dibaca oleh orang lain. Jelaskan apa yang diubah dan kenapa.
+
+
