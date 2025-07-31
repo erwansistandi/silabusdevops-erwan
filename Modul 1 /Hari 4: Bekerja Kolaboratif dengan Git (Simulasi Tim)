@@ -44,4 +44,112 @@ Menambahkan fitur hari ke-4 untuk belajar simulasi konflik Git.
 Jangan panik saat konflik. Ini hal yang sangat umum dan justru menunjukkan kamu mahir Git.
 PR yang baik harus bisa dibaca oleh orang lain. Jelaskan apa yang diubah dan kenapa.
 
+🧪 Simulasi Kolaborasi Tim (Tanpa Akun Kedua)
+✅ Opsi 1 – Clone ke Folder Kedua di Laptop Sendiri
+Tujuannya: Seolah-olah kamu adalah rekan tim yang bekerja di repo yang sama.
+
+📌 Langkah-langkah:
+1. Buka terminal baru, arahkan ke lokasi baru:
+   ----------------------------------------------------------------------------------
+   mkdir ~/repo-kloningan
+   cd ~/repo-kloningan
+   ----------------------------------------------------------------------------------
+2. Clone repo yang sama ke folder ini:
+   ----------------------------------------------------------------------------------
+   git clone https://github.com/erwansistandi/belajar-git.git
+   cd belajar-git
+   ----------------------------------------------------------------------------------
+3. Kamu sekarang punya dua folder kerja:
+   Folder A (asli): tempat kamu kerja sebagai Developer 1
+   Folder B (clone): simulasi kamu sebagai Developer 2
+
+🎯 Tujuan Simulasi Ini:
+Developer 1 membuat branch dan edit file.
+Developer 2 juga edit file yang sama.
+Saat Developer 1 merge, akan terjadi conflict.
+Kamu bisa belajar cara menyelesaikannya.
+
+Kalau kamu ingin lebih real:
+✅ Bisa juga ajak teman (atau pakai akun GitHub lain) dan invite sebagai collaborator di repo kamu.
+
+🎯 Lakukan langkah-langkah berikut untuk mulai clone ke folder baru:
+🔧 Langkah Clone Repo (Simulasi Developer 2)
+1. Buka terminal baru (atau tab baru kalau pakai VS Code).
+2. Buat folder khusus untuk clone:
+  ----------------------------------------------------------------------------------
+  mkdir ~/belajar-git-clone
+  cd ~/belajar-git-clone
+  ----------------------------------------------------------------------------------
+3. Clone repositori kamu dari GitHub:
+  ----------------------------------------------------------------------------------
+  git clone https://github.com/erwansistandi/belajar-git.git
+  cd belajar-git
+  ----------------------------------------------------------------------------------
+
+📁 Sekarang kamu punya:
+Folder asli (misal: ~/belajar-git) → Developer 1
+Folder clone (misal: ~/belajar-git-clone) → Developer 2
+Kalau udah selesai sampai sini, langsung kabari ya, biar kita lanjut ke simulasi konflik merge.
+
+🎯 Simulasi Merge Conflict (Hari 4 - Git Merge)
+🧑‍💻 Langkah 1 (Developer 1 – Folder Asli)
+   Buka terminal di folder asal (/belajar-git) lalu:
+   1. Edit file catatan.txt, ubah jadi seperti ini (atau mirip):
+      ----------------------------------------------------------------------------------
+      Hari keempat belajar Git.
+      Belajar konflik dan cara menyelesaikannya.
+      ----------------------------------------------------------------------------------
+   2. Simpan lalu commit:
+      ----------------------------------------------------------------------------------
+      git add catatan.txt
+      git commit -m "Edit catatan.txt dari folder asli"
+      ----------------------------------------------------------------------------------
+   3. Push ke GitHub:
+      ----------------------------------------------------------------------------------
+      git push origin main
+      ----------------------------------------------------------------------------------
+🧑‍💻 Langkah 2 (Developer 2 – Folder Clone)
+   Tanpa menarik perubahan dulu (git pull), edit file catatan.txt di folder clone:
+   1. Ubah isinya jadi:
+      ----------------------------------------------------------------------------------
+      Hari keempat belajar Git.
+      Edit versi folder clone untuk simulasi konflik.
+      ----------------------------------------------------------------------------------
+   2. Commit:
+      ----------------------------------------------------------------------------------
+      git add catatan.txt
+      git commit -m "Edit catatan.txt dari folder clone"
+      ----------------------------------------------------------------------------------
+   3. Lalu coba push:
+      ----------------------------------------------------------------------------------
+      git push origin main
+      ----------------------------------------------------------------------------------
+## ❗ Akan muncul error karena konflik! Di sinilah kita akan belajar menyelesaikannya.
+
+✅ Langkah Berikutnya: Resolve Konflik
+
+1. Dari folder asli (belajar-git) jalankan:
+git pull origin main
+Ini akan memicu konflik karena kamu dan folder clone mengubah file yang sama (catatan.txt).
+2. Setelah itu, buka file catatan.txt. Kamu akan melihat bagian konflik seperti ini:
+   <<<<<<< HEAD
+   Versi dari folder asli
+   =======
+    Versi dari folder clone
+    >>>>>>> s91d302
+3. Resolve manual: Hapus tanda <<<<<<<, =======, dan >>>>>>>, lalu edit jadi isi akhir yang kamu inginkan.
+4. Setelah selesai:
+   git add catatan.txt
+   git commit -m "Resolve konflik catatan.txt"
+   git push origin main
+
+🧠 Pengetahuan Kunci Hari Ini:
+1. Conflict muncul saat dua commit mengubah bagian yang sama dalam file.
+2. Git tidak bisa menebak isi mana yang benar, jadi kamu harus resolve manual.
+3. Prosesnya selalu:
+git pull
+# resolve conflict
+git add <file>
+git commit
+git push
 
