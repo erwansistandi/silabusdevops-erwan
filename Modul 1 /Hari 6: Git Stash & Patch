@@ -100,6 +100,24 @@ Menerapkannya di repo lain (atau folder bersih)
 ✅ Cek commit terakhir:
 git log --oneline
 
+✅ Sekarang kita buat patch dari salah satu commit!
+Misalnya, kamu ingin membuat patch dari commit:
+b4acdb8 Menambahkan catatan Hari 2
+🪜 Langkah-langkah:
+1. Buat patch dari 1 commit
+git format-patch -1 b4acdb8
+✅ Maka akan muncul file seperti:
+0001-Menambahkan-catatan-Hari-2.patch
+2. (Opsional) Lihat isi file patch
+cat 0001-Menambahkan-catatan-Hari-2.patch
+3. (Opsional) Terapkan di folder lain
+Kamu bisa cd ke folder lain dan lakukan:
+git init
+cp /path/to/patch/0001-Menambahkan-catatan-Hari-2.patch .
+git apply 0001-Menambahkan-catatan-Hari-2.patch
+
+
+
 
 
 
