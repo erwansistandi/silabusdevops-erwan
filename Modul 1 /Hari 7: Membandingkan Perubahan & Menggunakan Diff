@@ -1,0 +1,5 @@
+Hari ini kamu akan belajar:
+
+1. Melihat perbedaan antar commit, branch, dan file menggunakan git diff.
+2. Membandingkan file lokal dengan staging area atau repository.
+3. Menggunakan perintah git log -p dan git show untuk menelusuri perubahan.
