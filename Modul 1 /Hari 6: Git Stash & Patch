@@ -26,3 +26,82 @@ git status
 ----------------------------------------------------
 git stash list
 ----------------------------------------------------
+jika ada error
+✅ Bagus, kamu sudah jalankan perintah dengan benar. Tapi ada satu hal penting:
+
+⚠️ git stash tidak menyimpan file yang belum di-track (seperti hari6.txt).
+
+No local changes to save
+Karena hari6.txt masih untracked (belum di-add), Git tidak tahu harus menyimpannya ke stash.
+🛠 Solusi:
+1. Jalankan ini untuk menambahkan hari6.txt ke staging area, tapi tanpa commit:
+git add hari6.txt
+2. Lalu coba stash ulang:
+git stash push -m "Progress hari6 belum selesai"
+3. Setelah itu cek kembali:
+git stash list
+
+🧩 Apa Itu Patch di Git?
+🔤 Definisi Singkat:
+Patch adalah file teks berisi perubahan (diff) yang dilakukan di commit Git.
+File ini bisa digunakan untuk:
+
+ * Merekam perubahan dari satu commit
+ * Mentransfer perubahan ke repo lain
+ * Mengembalikan perubahan nanti jika dibutuhkan
+
+🔍 Analogi Sehari-hari:
+Bayangkan kamu sedang menyulam jaket.
+* Jaket = repository Git
+* Tambalan kain kecil yang kamu tempel = patch
+* Setiap tambalan = 1 commit (berisi perubahan)
+Kalau kamu kirim “tambalan” ke temanmu, dia bisa tempel tambalan yang sama ke jaket dia → seperti git apply patch di repo lain.
+
+🛠️ Contoh Nyata Patch (Isinya):
+Patch adalah file .patch atau .diff yang isinya seperti ini:
+diff --git a/hari6.txt b/hari6.txt
+new file mode 100644
+index 0000000..a1b2c3d
+--- /dev/null
++++ b/hari6.txt
+@@
++Isi file hari6.txt yang kamu tambahkan
+Patch ini bisa langsung dibaca manusia dan bisa diterapkan ke repo Git lain.
+📦 Fungsi Patch di Dunia Nyata:
+| Fungsi                    | Penjelasan                                                    |
+| ------------------------- | ------------------------------------------------------------- |
+| 💌 Kirim perubahan ke tim | Jika kamu tak bisa push langsung, cukup kirim `.patch` ke tim |
+| 🔁 Backup commit penting  | Simpan patch untuk commit penting sebagai cadangan            |
+| 🔄 Terapkan ke repo lain  | Gunakan `git apply` untuk menyalin commit ke repo lain        |
+
+📌 Cara Bikin Patch:
+git format-patch -1 <commit-id>
+
+📌 Cara Pakai Patch:
+git apply 0001-nama-patch.patch
+❓Singkatnya:
+Patch = file yang merekam isi perubahan Git (dari commit), dan bisa kamu salin, kirim, atau tempel di repo lain seperti "tambalan".
+
+Kalau kamu sudah commit hari6.txt, patch-nya bisa digunakan oleh orang lain untuk dapatkan file itu tanpa harus akses GitHub.
+
+🧪 Tujuan Simulasi:
+Kamu sudah punya file hari6.txt dan sudah commit ✅
+
+Kita akan:
+
+Membuat patch dari commit hari6.txt
+
+Mengirim/menyalin patch itu ke tempat lain
+
+Menerapkannya di repo lain (atau folder bersih)
+
+🪜 Langkah 1: Buat Patch
+
+✅ Cek commit terakhir:
+git log --oneline
+
+
+
+
+
+
