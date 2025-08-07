@@ -1,0 +1,28 @@
+🔥 Hari 6: Git Stash & Patch
+🎯 Tujuan:
+Memahami cara menyimpan perubahan sementara tanpa commit (stash) dan memindahkan patch antar project (dengan git format-patch dan apply).
+📝 Langkah 1 — Simulasi Stash
+1. Checkout ke main
+----------------------------------------------------
+git checkout main
+----------------------------------------------------
+2. Buat file baru hari6.txt
+----------------------------------------------------
+echo "Ini hari ke-6 belajar Git" > hari6.txt
+----------------------------------------------------
+3. Tambahkan baris lain, tapi jangan commit dulu!
+----------------------------------------------------
+echo "Baris tambahan belum selesai" >> hari6.txt
+----------------------------------------------------
+4. Simpan perubahan ke stash
+----------------------------------------------------
+git stash push -m "Progress hari6 belum selesai"
+----------------------------------------------------
+5. Cek apakah working directory bersih:
+----------------------------------------------------
+git status
+----------------------------------------------------
+6. Lihat daftar stash:
+----------------------------------------------------
+git stash list
+----------------------------------------------------
