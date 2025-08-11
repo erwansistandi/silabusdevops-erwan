@@ -66,4 +66,54 @@ Troubleshooting
 Audit
 CI/CD cerdas
 
+Siap, kita praktikkan langsung.
+Kita akan latihan di repo belajar-git yang sudah ada.
+🛠 Latihan git diff & git show
+1️⃣ Buat perubahan di file
+Edit file catatan.txt, misalnya tambahkan:
+Hari ketujuh belajar Git.
+Belajar git diff dan git show.
+2️⃣ Lihat perbedaan sebelum di-add
+git diff
+* Menampilkan perbedaan antara working directory dan staging area.
+* Baris hijau = baris yang ditambahkan.
+* Baris merah = baris yang dihapus.
+3️⃣ Stage perubahan & lihat perbedaannya
+git add catatan.txt
+git diff --cached
+* Menampilkan perbedaan antara staging area dan commit terakhir di repository.
+4️⃣ Commit perubahan
+git commit -m "Menambahkan catatan Hari 7: git diff & git show"
+5️⃣ Lihat commit terakhir dengan detail (git show)
+git show
+* Menampilkan commit terbaru lengkap dengan detail perubahan (diff) dan metadata (author, tanggal, pesan commit).
+Kalau mau lihat commit tertentu:
+git log --oneline
+git show <hash_commit>
+Lanjut: bandingkan antar branch (penting buat PR/CI)
+1. Buat perubahan ringan di branch baru:
+git checkout -b hari7-branch
+echo "Baris uji branch" >> catatan.txt
+git add catatan.txt && git commit -m "Uji diff antar branch"
+2. Bandingkan main vs hari7-branch:
+git diff main..hari7-branch          # beda langsung antar dua tip
+git diff --name-only main..hari7-branch
+git diff --stat main..hari7-branch
+3. Gaya “PR” (pakai tiga titik = dari merge-base ke HEAD branch fitur):
+git diff main...hari7-branch         # ini yang paling relevan untuk review PR
+4. Bandingkan lokal vs remote (cek apakah lokalmu ketinggalan):
+git fetch origin
+git diff main origin/main
+Tugas singkat Hari 7
+Kirimkan output:
+
+git diff --name-only main...hari7-branch
+
+git show (commit terakhirmu di hari7-branch)
+
+(Opsional) Push dan buat PR dari hari7-branch.
+
+Siap coba langkah branch-diff di atas? Kalau sudah, kita gas ke Hari 8 (GitHub/GitLab Issues & workflow praktis untuk CI/CD).
+
+
 
