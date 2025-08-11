@@ -1,5 +1,69 @@
+Hari 7: Membandingkan Perubahan & Menggunakan Diff
 Hari ini kamu akan belajar:
 
 1. Melihat perbedaan antar commit, branch, dan file menggunakan git diff.
 2. Membandingkan file lokal dengan staging area atau repository.
 3. Menggunakan perintah git log -p dan git show untuk menelusuri perubahan.
+
+✍️ Latihan Hari 7:
+1.  Buat perubahan pada catatan.txt, misalnya tambahkan satu baris:
+Hari ketiga belajar Git.
+2. Jalankan perintah berikut dan pahami output-nya:
+* git diff – melihat perbedaan antara working directory dan staging area.
+* git add catatan.txt
+* git diff --cached – melihat perbedaan antara staging area dan repository.
+* git commit -m "Menambahkan Hari 3 ke catatan.txt"
+
+3. Bandingkan commit:
+* git log --oneline – lihat daftar commit.
+* Ambil dua hash commit lalu jalankan:
+  git diff <hash1> <hash2>
+
+4. Gunakan:
+git show <hash> – untuk melihat detail perubahan dari satu commit.
+git log -p – untuk melihat semua log beserta diff-nya.
+
+git diff dan perintah-perintah pembanding lainnya sangat sering digunakan oleh DevOps Engineer, terutama dalam konteks:
+🔧 Mengapa Perbandingan Perubahan (diff, show, dll.) penting dalam DevOps?
+✅ 1. Code Review dan CI/CD Pipelines
+Sebelum merge atau deploy, pipeline biasanya menjalankan test & linting hanya pada file yang berubah.
+
+Contoh di CI: git diff --name-only origin/main...HEAD → mencari file yang berubah.
+
+Digunakan untuk mempercepat testing dan hanya memproses file yang perlu.
+
+✅ 2. Debugging Perubahan di Server
+Saat sistem tiba-tiba bermasalah, DevOps bisa lihat:
+“Commit terakhir ini ngubah apa?”
+→ git show atau git diff bisa jawab itu.
+
+✅ 3. Membuat Patch untuk Server atau Review
+Kadang kamu perlu mengirim patch kecil ke tim lain tanpa push ke GitHub dulu → git format-patch, git diff, git apply.
+
+✅ 4. Validasi Config & Infra as Code (IaC)
+Untuk tool seperti Ansible, Terraform, Helm, Kubernetes YAML, kamu bisa simpan konfigurasinya di Git.
+
+Sebelum apply ke production, kamu bisa review perubahan lewat git diff.
+
+✅ 5. Otomatisasi dan Conditional Logic
+Dalam script CI/CD, kamu bisa:
+-------------------------------------------------------
+if git diff --quiet HEAD^ HEAD -- some/file.txt; then
+   echo "file.txt tidak berubah"
+fi
+-------------------------------------------------------
+
+⚠️ Kesalahan Fatal yang Bisa Dihindari dengan diff:
+Merge conflict tidak disadari.
+Config rusak diubah tanpa dicek.
+Rollback sulit karena tidak tahu apa yang berubah.
+
+📌 Kesimpulan:
+Perintah seperti git diff, git show, git log -p, dan git format-patch sangat esensial untuk:
+Kontrol kualitas
+Review sebelum deploy
+Troubleshooting
+Audit
+CI/CD cerdas
+
+
